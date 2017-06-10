@@ -4,10 +4,10 @@ $LOAD_PATH.unshift lib unless $LOAD_PATH.include?(lib)
 # encoding: UTF-8
 Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
-  s.name        = 'spree_api_auth'
-  s.version     = '3.0.0'
-  s.summary     = "Spree's Authenticattion API"
-  s.description = "Spree's Authenticattion API"
+  s.name        = 'solidus_api_auth'
+  s.version     = '2.3.0'
+  s.summary     = "solidus's Authenticattion API"
+  s.description = "solidus's Authenticattion API"
   s.required_ruby_version = '>= 2.1.0'
 
   s.author    = 'Masahiro Saito'
@@ -20,9 +20,9 @@ Gem::Specification.new do |s|
   s.requirements << 'none'
 
   solidus_version = [">= 1.0.6", "< 3"]
-  s.add_dependency 'spree_core', solidus_version
-  s.add_dependency 'spree_api', solidus_version
-  s.add_dependency 'spree_auth_devise', solidus_version
+  s.add_dependency 'solidus_core', solidus_version
+  s.add_dependency 'solidus_api', solidus_version
+  s.add_dependency 'solidus_auth_devise', solidus_version
 
   s.add_development_dependency 'capybara'
   s.add_development_dependency 'factory_girl'
