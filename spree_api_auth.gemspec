@@ -19,9 +19,10 @@ Gem::Specification.new do |s|
   s.require_path = 'lib'
   s.requirements << 'none'
 
-  s.add_dependency 'spree_core', '~> 3.0'
-  s.add_dependency 'spree_api', '~> 3.0'
-  s.add_dependency 'spree_auth_devise', '~> 3.0'
+  solidus_version = [">= 1.0.6", "< 3"]
+  s.add_dependency 'spree_core', solidus_version
+  s.add_dependency 'spree_api', solidus_version
+  s.add_dependency 'spree_auth_devise', solidus_version
 
   s.add_development_dependency 'capybara'
   s.add_development_dependency 'factory_girl'
